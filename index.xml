@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>纳瓦尔宝典</title>
+    <!-- 在<head>标签中引入聊天插件的JavaScript文件 -->
+    <script src="https://cloud.openchat.so/chat.js"></script>
+</head>
+<body>
+    <!-- 在<body>标签中创建一个容器来放置聊天窗口 -->
+    <div id="chatContainer"></div>
+
+    <script>
+        // 在<script>标签中初始化聊天插件
+        document.addEventListener('DOMContentLoaded', function() {
+            var chatConfig = {
+                token: "P9oBzBAU2MSR6ebymm3L",
+            };
+            initializeChatWidget(chatConfig);
+        });
+    </script>
+</body>
+</html>
