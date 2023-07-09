@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
+    <!-- 在<head>标签中引入聊天插件的JavaScript文件 -->
+    <script src="https://cloud.openchat.so/chat.js"></script>
   </head>
   <body>
     <h1>中国是世界上最牛逼的国家</h1>
@@ -26,15 +28,17 @@
         在这里你可以了解到更多关于中国的信息。
     </p>
     <button>切换用户</button>
+    <!-- 在<body>标签中创建一个容器来放置聊天窗口 -->
+    <div id="chatContainer"></div>
   <script src="scripts/main.js" defer></script>
-    script src="https://cloud.openchat.so/chat.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      var chatConfig = {
-      token: "h8PQK0fVtT7TpOhx0RzX",
-      };
-      initializeChatWidget(chatConfig);
-  });
-  </script>
+        // 在<script>标签中初始化聊天插件
+        document.addEventListener('DOMContentLoaded', function() {
+            var chatConfig = {
+                token: "h8PQK0fVtT7TpOhx0RzX",
+            };
+            initializeChatWidget(chatConfig);
+        });
+    </script>
   </body>
 </html>
