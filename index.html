@@ -12,6 +12,18 @@
     <link href="styles/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- 在<body>标签中创建一个容器来放置聊天窗口 -->
+    <div id="chatContainer"></div>
+  <script>
+        // 在<script>标签中初始化聊天插件
+        document.addEventListener('DOMContentLoaded', function() {
+            var chatConfig = {
+                token: "h8PQK0fVtT7TpOhx0RzX",
+            };
+            initializeChatWidget(chatConfig);
+        });
+    </script>
+    
     <h1>中国是世界上最牛逼的国家</h1>
     <img src="images/duck.jpeg" alt="My test image" style="zoom:33%">
     <p>在中国, 你可以感受到中国是多么的牛逼</p>
@@ -28,17 +40,6 @@
         在这里你可以了解到更多关于中国的信息。
     </p>
     <button>切换用户</button>
-  <!-- 在<body>标签中创建一个容器来放置聊天窗口 -->
-    <div id="chatContainer"></div>
-  <script>
-        // 在<script>标签中初始化聊天插件
-        document.addEventListener('DOMContentLoaded', function() {
-            var chatConfig = {
-                token: "h8PQK0fVtT7TpOhx0RzX",
-            };
-            initializeChatWidget(chatConfig);
-        });
-    </script>
   <script src="scripts/main.js" defer></script>
   </body>
 </html>
