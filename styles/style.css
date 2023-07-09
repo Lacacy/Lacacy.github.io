@@ -1,0 +1,56 @@
+
+html {
+  font-size: 10px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
+  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  background-color: #00539f;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  /*单词之间的间距*/
+  letter-spacing: 1px;  
+}
+
+
+body {
+  /*body 盒子的宽度*/
+  width: 800px;
+  margin: 0 auto;
+  /*background-color: #ff9500;*/
+  background-color: pink;
+  /*padding: [
+  ***********
+  ***********
+  **  xxx  **
+  **  xxx  **
+  **  xxx  **
+  ***********
+  ***********
+  ]
+  */
+  /*        top  right bottom left*/
+  padding: 10px 20px 20px 20px;
+  /*边界线的宽度*/
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 10;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
